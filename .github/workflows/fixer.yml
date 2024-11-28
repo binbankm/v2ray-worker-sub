@@ -2,10 +2,10 @@ name: Fix Sub Ouput
     
 on:
     push:
-        branches:
-          - master
+        paths:
+            - 'python/replace.py'
 
-#    workflow_dispatch:
+    workflow_dispatch:
     schedule:
         - cron: '0 */6 * * *'
 jobs:
